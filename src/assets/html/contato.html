@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/contato.css">
+    <title>Contato</title>
+</head>
+
+<body>
+    <div class="container">
+        <form action="">
+            <div class="inputs">
+                <input onchange="validarNome()" type="text" required="required" name="text" pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$" placeholder="Entre com seu nome"/>
+                <label for="name" id="oi_name"></label>
+                <div class="email-input">
+                    <input onchange="validarEmail()" required="required" id="email" type="text"
+                        placeholder="Entre com endereço de email válido"> <br>
+                    <label for="email">endereço de email incorreto</label>
+                </div>
+                <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Sua mensagem"></textarea>
+            </div>
+            <button class="btn-send" onclick="callFunction()">Enviar</button>
+        </form>
+
+        <div class="footer-contact">
+            <div class="footer-section">
+                <h1>Entrar em contato</h1>
+
+                <h2>Ei!! estamos ansiosos para conversar com você!</h2>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, ab quisquam labore repudiandae
+                    consequuntur corporis quae, quos vero at libero provident ut mollitia enim veritatis amet
+                    incidunt illo deleniti natus nam! Soluta autem enim odio quae maxime, tempore velit iusto dicta!</p>
+
+                <div class="social-icons">
+                    <a href="facebook.com"><img src="../img/facebook-icon.png" alt=""></a>
+                    <a target="_blank" href="https://www.instagram.com/institutoporayvua/"><img
+                            src="../img/instagram-icon.png" alt=""></a>
+                    <a href="twitter.com"><img src="../img/twitter-icon.png" alt=""></a>
+                    <a href="youtube.com"><img src="../img/yt-icon.png" alt=""></a>
+                </div>
+                <div class="card-contact">
+                    <h2>Ligue para nos</h2>
+                    <span>+55 (11) 994475-8738</span>
+                    <span>+55 (14) 94545-8901</span>
+                    <h2>Localização</h2>
+                    <span>R. Ari Barroso, 305 - Pres. Altino</span>
+                    <span>Osasco - SP, 06216-901</span>
+                    <h2>Horario comercial</h2>
+                    <span>Seg-sex ..... 10h-20h</span>
+                    <span>Sab,dom ..... fechado</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal_alert">
+        <div class="content_alert">
+
+        </div>
+    </div>
+
+    <script src="../js/validar.js">
+
+    </script>
+
+</body>
+
+</html>

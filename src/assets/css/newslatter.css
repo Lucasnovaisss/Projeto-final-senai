@@ -1,0 +1,42 @@
+.newslatter {
+    display: flex;
+    width: 90%;
+    height: 150px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 5px 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: relative;
+    top: 100px;
+
+    z-index: 1;
+}
+
+.newslatter h2 {
+    width: 500px;
+}
+
+.newslatter button {
+    background-color: #4e991d;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 1px;
+    color: aliceblue;
+}
+
+.newslatter button:hover {
+    background-color: #3d810f;
+}
+
+.newslatter input {
+    text-align: center;
+    padding: 10px 10px;
+    border: none;
+}
+
+.newslatter input:focus {
+    border: 1px solid #4e991d;
+}
+

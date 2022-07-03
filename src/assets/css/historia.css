@@ -1,0 +1,49 @@
+@import url(header.css);
+@import url(fonts.css);
+@import url(search-input.css);
+ 
+
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    font-family: 'mulish';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    box-sizing: content-box;
+    
+}
+
+header {
+    background-color: #87b4675e;
+    position: relative;
+    z-index: 1;
+    position: absolute;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+header nav ul li a {
+    color: white;
+}
+.video-container {
+    width: 100%vh;
+    height: 100vw;
+    background-color: aqua;
+}
+
+.video-container video {
+    position: absolute;
+    width: 100%;
+    margin: 0;
+}
+
+.video-container a {
+    position: absolute;
+    z-index: 3;
+}
+

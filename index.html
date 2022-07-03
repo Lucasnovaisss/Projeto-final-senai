@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fonte mulish-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="src/assets/img/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./src/assets/css/styleH.css">
+    <title>Ong Porayvua</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <a href="./index.html"><img src="src/assets/img/logo sem fundo verde.png" alt="logo" width="150px"
+                    id="logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html" id="home">Home</a></li>
+                    <li><a id="porayvua" href="src/assets/html/porayvua/historia.html">Porayvua</a></li>
+                    <li><a id="projetos" href="src/assets/html/projetos/amazonia.html">Projetos</a></li>
+                    <li><a href="src/assets/html/contato.html">Contato</a></li>
+                </ul>
+                <div class=" drop_box drop_porayvua" onmouseleave="tirarMenuPorayvua()">
+                    <a href="src/assets/html/porayvua/atuacao.html">Atuação</a>
+                    <a href="src/assets/html/porayvua/historia.html">Historia</a>
+                    <a href="src/assets/html/porayvua/miss.html">Missão</a>
+                </div>
+                <div class=" drop_box drop_projetos" onmouseleave="tirarMenuProjetos()">
+                    <a href="src/assets/html/projetos/agua.html">Água</a>
+                    <a href="src/assets/html/projetos/amazonia.html">Amazônia</a>
+                    <a href="src/assets/html/projetos/pantanal.html">Pantanal</a>
+                </div>
+            </nav>
+            <div class="search-box">
+                <input class="search-text" type="text" placeholder="Procure aqui...">
+                <a href="#" class="search-btn">
+                    <img src="./src/assets/svg/loupe-white.svg" alt="lupa branca" class="lupa_branca" width="25px"
+                        height="25px">
+                    <img src="./src/assets/svg/loupe-green.svg" alt="lupa verde" class="lupa_verde" width="25px"
+                        height="25px">
+                </a>
+            </div>
+        </header>
+        <main>
+            <div class="content">
+                <div class="slides">
+                    <input type="radio" name="slide" id="slide1">
+                    <input type="radio" name="slide" id="slide2">
+                    <input type="radio" name="slide" id="slide3">
+                    <input type="radio" name="slide" id="slide4">
+                    <input type="radio" name="slide" id="slide5">
+
+
+                    <div class="slide s1">
+                        <video autoplay loop width="100%" muted>
+                            <source src="src/assets/video/Somos uma onde de afeto.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="slide">
+                        <video class="video2" width="100%" preload muted>
+                            <source src="src/assets/video/Video desmatamento.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="slide">
+                        <img src="src/assets/img/cuidar da natureza.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <video class="video3" width="100%" autoplay loop muted>
+                            <source src="src/assets/video/cuidar da natureza.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="slide">
+                        <img src="src/assets/img/cuidar da natureza 1.png" alt="">
+                    </div>
+                </div>
+
+                <div class="navigation">
+                    <label class="bar" for="slide1" checked></label>
+                    <label class="bar" for="slide2"></label>
+                    <label class="bar" for="slide3"></label>
+                    <label class="bar" for="slide4"></label>
+                    <label class="bar" for="slide5"></label>
+                </div>
+            </div>
+            <div class="background"></div>
+
+
+
+
+            <section>
+
+                <div class="card card_verde">
+                    <div class="ref_card">
+                        <img src="./src/assets/img/arvore.png" alt="" width="100px" height="100px">
+                        <h3>reflorestamento</h3>
+                        <p>
+                            com o plantio de mudas nativas da Mata Atlântica, atendemos <strong
+                                style="color:#4E991D ;">empresas</strong> e
+                            <strong style="color:#4E991D ;">pessoas</strong> que tenham
+                            responsabilidade com o meio ambiente e queiram contribuir para a neutralização das emissões
+                            de carbono, a conservação dos recursos hídricos e da biodiversidade
+                        </p>
+                        <button class="btn-card">Saiba Mais</button>
+                    </div>
+
+                    <img src="src/assets/img/reflorestamento.jpg" alt="pessoas plantando" width="60%" height="500px">
+                </div>
+                <div class=" card card_branco">
+                    <img src="src/assets/img/analise-agua-1024x516.jpg" alt="pessoas plantando" width="55%"
+                        height="500px">
+
+                    <div class="ref_card">
+                        <img src="src/assets/img/agua.png" alt="" width="100px" height="100px">
+                        <h3>Monitoramento de agua</h3>
+                        <p>
+                            Monitoramento físico-químico da água e o biomonitoramento com Macroinvertebrados Bentônicos
+                            (MIB) – estratégia usada para avaliar o nível de degradação ambiental dos rios, monitorando
+                            a qualidade da água e de organismos vivos que habitam o fundo de rios e lagos aderidos a
+                            pedras, cascalhos, folhas ou enterrados em lama ou areia, como insetos, minhocas, caramujos
+                            etc.
+                        </p>
+                        <button class="btn-card">Saiba Mais</button>
+                    </div>
+                </div>
+                <div class="card card_verde">
+                    <div class="ref_card">
+                        <img src="src/assets/img/mãozinha.png" alt="" width="150px" height="150px">
+                        <h3>Inclusão social</h3>
+                        <p>
+                            Acreditamos que a Sustentabilidade está associada à inclusão como caminho de desenvolvimento
+                            da sociedade.
+                            Com ações, projetos e programas que fomentam a educação, a capacitação profissional e a
+                            geração de renda, a Onda Verde atua em um ecossistema de possibilidades para oferecer
+                            inserção, cidadania e um futuro digno para as pessoas.
+                        </p>
+                        <button class="btn-card">Saiba Mais</button>
+                    </div>
+                    <img src="src/assets/img/img2-Pessoas-com-sindrome-de-Down-nao-consegu-41588.jpg"
+                        alt="pessoas plantando" width="60%" height="500px">
+                </div>
+            </section>
+            <div class="maps-container">
+                <div class="map-div">
+                    <img src="src/assets/svg/map-pin-svgrepo-com.svg" alt="" width="100" height="100">
+                    <h2>Onde estamos localizados?</h2>
+                </div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.1826415864484!2d-46.77413234967412!3d-23.525932484625415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ceff197efd0ed7%3A0x73a8a70b927c1d48!2sEscola%20Senai%20Nadir%20Dias%20de%20Figueiredo!5e0!3m2!1spt-BR!2sbr!4v1656539405549!5m2!1spt-BR!2sbr"
+                    width="700" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="newslatter">
+                <h2>Assine nossa newsletter para receber novidades sobre as nossas campanhas.</h2>
+                <form action="">
+                    <input id="name" type="text" placeholder="Nome">
+                    <input id="second_name" type="text" placeholder="Sobrenome">
+                    <input id="email" type="text" placeholder="Email">
+                    <button btn-newslatter>Assine</button>
+                </form>
+            </div>
+        </main>
+
+        <div class="back-top">
+            <a class="btn-back-top" href="#"><img src="./src/assets/svg/seta.svg" alt="seta pra cima" width="50px"
+                    height="50px"></a>
+        </div>
+
+
+
+        <footer>
+            <div class="footer">
+                <h2>porayvua</h2>
+                <div class="social-icons">
+                    <a href="facebook.com"><img src="src/assets/img/facebook-icon.png" alt=""></a>
+                    <a href="instagram.com"><img src="src/assets/img/instagram-icon.png" alt=""></a>
+                    <a href="twitter.com"><img src="src/assets/img/twitter-icon.png" alt=""></a>
+                    <a href="youtube.com"><img src="src/assets/img/yt-icon.png" alt=""></a>
+                </div>
+            </div>
+            <div class="section-footer">
+                <div>
+                    <h2>Recursos</h2>
+                    <a href="">aplicativo</a>
+                    <a href="">documentos</a>
+                    <a href="">sistema</a>
+                    <a href="">FAQ</a>
+                </div>
+                <div>
+                    <h2>Projetos</h2>
+                    <a href="">Caridade</a>
+                    <a href="">pantanal</a>
+                    <a href="">Amazônia</a>
+                </div>
+                <div>
+                    <h2>empresa</h2>
+                    <a href="">Sobre Nós</a>
+                    <a href="">Blog</a>
+                    <a href="">Carreira</a>
+                    <a href="">Doação</a>
+                </div>
+                <div>
+                    <h2>Social</h2>
+                    <a href="">Instagram</a>
+                    <a href="">Twitter</a>
+                    <a href="">Facebook</a>
+                    <a href="">Youtube</a>
+                </div>
+
+            </div>
+
+            <div class="copyright">
+                <p>© Copyright championsTech</p>
+            </div>>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"
+        integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ=="
+        crossorigin="anonymous"></script>
+
+    <script src="./src/assets/js/video-hover.js"></script>
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="./src/assets/js/fixed_header.js"></script>
+    <script src="src/assets/js/dropdown.js"></script>
+    <script src="src/assets/js/dropdown.js"></script>
+</body>
+
+</html>

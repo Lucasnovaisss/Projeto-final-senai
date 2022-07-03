@@ -1,0 +1,93 @@
+header {
+    position: fixed;
+    display: flex;
+    top: 1px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 60px 0px 60px;
+    width: 100%;
+    z-index: 1;
+    transition: 1s;
+}
+
+.header_style {
+    background-color: #87b4677e; 
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    transition: 0.7s;
+}
+
+nav {
+    width: 10%;
+    left: 24%;
+    position: absolute;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #325819;
+    font-size: 23px;
+    font-weight: 500;
+    transition: 0,7s;
+    padding: 10px 50px;
+    width: 100vw;
+}
+
+nav ul li a:hover {
+    background-color: #0000000e;
+}
+
+
+/* drop box */
+
+.drop_box {
+    z-index: 1;
+    background-color: #ffffff;
+    width: 200px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    transition: 0.7s;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin-top: 14px;
+}
+
+.drop_porayvua {
+    left: 164px;
+    display: none;
+}
+
+.drop_projetos {
+    left: 360px;
+    display: none;
+}
+
+
+
+.drop_box a {
+    text-decoration: none;
+    color: #325819;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0px;
+} 
+
+.drop_box a:hover {background-color: #f1f1f1; font-weight: 500; display: block;}
+
+.greenline {
+    border-bottom: 3px solid #4E991D;
+    width: auto;
+    height: 5px;
+    padding-bottom: 4px;
+}
+
+
+

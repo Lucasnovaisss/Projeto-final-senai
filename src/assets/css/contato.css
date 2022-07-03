@@ -1,0 +1,144 @@
+
+@import url(fonts.css);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%vh;
+    color: aliceblue;
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(to bottom right,  #fff4f4, rgb(255, 249, 249), #fdecd1d5);
+}
+
+.footer-section h1 {
+    font-family: 'Bebas Neue', cursive;
+    color: #fff;
+    font-size: 100px;
+    letter-spacing: 5px;
+}
+
+.footer-section h2 {
+    width: 300px;
+    text-align: start;
+
+}
+
+.footer-section p {
+    width: 400px;
+    font-size: 20px;
+    color: aliceblue;
+    margin-top: 40px;
+}
+
+form, .footer-section {
+    margin-left: 100px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-top: 20px;
+}
+
+.inputs input {
+    margin-bottom: 20px;
+    border: none;
+    padding: 18px 20px;
+    background-color: #fff;
+}
+
+.footer-contact {
+    background-color: #87b467;
+    width: 100%;
+    height: 490px;
+    box-sizing: border-box;
+}
+
+.card-contact {
+    width: 300px;
+    height: 300px ;
+    bottom: 15px;
+
+    left: 55.9%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #fff;
+    position: absolute;
+    color: black;
+
+    padding: 100px 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+.btn-send {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: none;
+    background-color:#87b467 ;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+textarea {
+    border: none;
+    background-color: #fff;
+    padding: 10px;
+}
+
+
+.btn-send:hover {
+    background-color:#46970c
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-icons {
+    margin-top: 40px;
+    width: 180px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.email-input {
+    display: flex;
+    flex-direction: column;
+}
+
+#email {
+    margin-bottom: 0;
+    margin-top: 30px;
+}
+
+#mensagem {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.email-input label {
+    color: red;
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+    margin-left: 5px;
+    display: none;
+}

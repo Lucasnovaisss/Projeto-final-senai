@@ -1,0 +1,110 @@
+.container-hamb{
+    position: absolute;
+    width: 60px;
+    margin: 20px auto;
+    z-index: 2;
+    height: 60px; top: 100; left: 100px;cursor: pointer;
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+  }
+  .btn {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 10;
+    left: 0px;
+    cursor: pointer;
+  }
+  .btn-left {
+    background-color: #4E991D;
+    position: absolute;
+    height: 5px;
+    width: 30px;
+    top: 30px;
+    left: 0px;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+  }
+  .btn-left:before {
+    background-color: #4E991D;
+    position: absolute;
+    width: 30px;
+    height: 5px;
+    content: "";
+    top: -20px;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+  }
+  .btn-left:after {
+    background-color: #4E991D;
+    position: absolute;
+    width: 30px;
+    height: 5px;
+    content: "";
+    top: 20px;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+  }
+  
+  .btn-right {
+    background-color: #4E991D;
+    position: absolute;
+    height: 5px;
+    width: 30px;
+    top: 30px;
+    left: 30px;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+  }
+  .btn-right:before {
+    background-color: #4E991D;
+    position: absolute;
+    width: 30px;
+    height: 5px;
+    content: "";
+    top: -20px;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+  }
+  .btn-right:after {
+    background-color: #4E991D;
+    position: absolute;
+    width: 30px;
+    height: 5px;
+    content: "";
+    top: 20px;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+  }
+  
+  .active .btn-left {
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    background: transparent;
+  }
+  .active .btn-left:before {
+    -webkit-transform: rotateZ(45deg) scaleX(1.4) translate(4px, 4px);
+    transform: rotateZ(45deg) scaleX(1.4) translate(4px, 4px);
+  }
+  .active .btn-left:after {
+    -webkit-transform: rotateZ(-45deg) scaleX(1.4) translate(4px, -4px);
+    transform: rotateZ(-45deg) scaleX(1.4) translate(4px, -4px);
+  }
+  .active .btn-right {
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    background: transparent;
+  }
+  .active .btn-right:before {
+    -webkit-transform: rotateZ(-45deg) scaleX(1.4) translate(-4px, 4px);
+    transform: rotateZ(-45deg) scaleX(1.4) translate(-4px, 4px);
+  }
+  .active .btn-right:after {
+    -webkit-transform: rotateZ(45deg) scaleX(1.4) translate(-4px, -4px);
+    transform: rotateZ(45deg) scaleX(1.4) translate(-4px, -4px);
+  }

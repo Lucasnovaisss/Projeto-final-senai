@@ -1,0 +1,63 @@
+.lupa_branca {
+    display: none;
+}
+
+.search-box a {
+    text-decoration: none;
+}
+
+.search-box {
+    display: flex;
+    background: white;
+    height: 50px;
+    border-radius: 40px;
+    padding: 10px;
+    align-items: center;
+    margin: 0;
+
+    margin-right: 110px;
+}
+
+.search-text {
+    background: none;
+    border: none;
+    outline: 0;
+
+    font-size: 16px;
+    width: 0;
+    padding: 0;
+    transition: 0.4s;
+}
+
+.search-btn {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.search-box:hover > .search-text {
+    width: 200px;
+    padding-left: 20px;
+}
+
+.search-box:hover > .search-btn {
+    background-color: #4E991D;
+    
+}
+
+.search-box:hover > .search-btn .lupa_verde {
+    display: none;
+}
+.search-box:hover > .search-btn .lupa_branca {
+    display: block;
+}
+
+@media(max-width: 1400px) {
+    .search-box {
+        display: none;
+    }
+} 
