@@ -1,0 +1,59 @@
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+  }
+
+  .modal:target {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .modal > div {
+    width: 400px;
+    position: relative;
+    margin: 15% auto;
+    padding: 15px 20px;
+    background: #fff;
+  }
+
+
+  .modal-content {
+    font-family: 'Lato', sans-serif;
+    color: #677279;
+  }
+
+  .fechar {
+    position: absolute;
+    width: 30px;
+    right: 6px;
+    top: 1px;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+  }
+
+  .fechar:hover {
+    background-color: #76818831;
+    border-radius: 50%;
+  }
+
+  .modal-content {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+    justify-content: center ;
+  }

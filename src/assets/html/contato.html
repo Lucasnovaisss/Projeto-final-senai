@@ -10,6 +10,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../css/contato.css">
+    <link rel="stylesheet" href="../css/modal.css">
     <title>Contato</title>
 </head>
 
@@ -17,16 +18,28 @@
     <div class="container">
         <form action="">
             <div class="inputs">
-                <input onchange="validarNome()" type="text" required="required" name="text" pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$" placeholder="Entre com seu nome"/>
-                <label for="name" id="oi_name"></label>
-                <div class="email-input">
-                    <input onchange="validarEmail()" required="required" id="email" type="text"
-                        placeholder="Entre com endereço de email válido"> <br>
-                    <label for="email">endereço de email incorreto</label>
-                </div>
+                <input id="name" type="text" name="text" placeholder="Entre com seu nome" />
+                <label id="name-label" for="name">nome invalido</label>
+                <input onchange="validarEmail()" id="email" type="text"
+                    placeholder="Entre com endereço de email válido">
+                <br>
+                <label id="email-label" for="email">endereço de email não valido</label>
                 <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Sua mensagem"></textarea>
             </div>
-            <button class="btn-send" onclick="callFunction()">Enviar</button>
+
+            <a class="btn-send" href="#abrirModal" onclick="callFunction()">Enviar</a>
+
+            <div id="abrirModal" class="modal">
+                <div class="modal-content">
+                    <a href="#fechar" title="Fechar" class="fechar"><img width="30px" height="30px"
+                            src="../../assets/svg/close_FILL0_wght400_GRAD0_opsz48.svg" alt=""></a>
+                    <img width="50px" height="50px" src="../../assets/svg/check_circle_FILL0_wght400_GRAD0_opsz48.svg"
+                        alt="">
+                    <h2>mensagem enviada</h2>
+                    <p>sua mensagem foi enviada com sucesso!!</p>
+                    <p>em breve retornaremos o contato, até mais</p>
+                </div>
+            </div>
         </form>
 
         <div class="footer-contact">
@@ -47,6 +60,8 @@
                     <a href="youtube.com"><img src="../img/yt-icon.png" alt=""></a>
                 </div>
                 <div class="card-contact">
+                    <img id="btn-close" width="30px" height="30px"
+                        src="../../assets/svg/close_FILL0_wght400_GRAD0_opsz48.svg" alt="">
                     <h2>Ligue para nos</h2>
                     <span>+55 (11) 994475-8738</span>
                     <span>+55 (14) 94545-8901</span>
@@ -67,9 +82,9 @@
         </div>
     </div>
 
-    <script src="../js/validar.js">
-
+    <script src="../js/validar-contato.js">
     </script>
+    <script src="../../assets/js/close-contact-card.js"></script>
 
 </body>
 

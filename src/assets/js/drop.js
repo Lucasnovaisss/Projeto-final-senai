@@ -1,7 +1,9 @@
 window.onscroll = function () {
     StickyTop()
+    console.log(window.pageYOffset)
 
 }
+
 
 let corpo = document.getElementsByTagName('body')[0];
 let btn_descer = document.getElementsByClassName('box')[0];
